@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Intro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Pacifico&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-page">
+  <div class="landing-motion" aria-hidden="true">
+    <span class="motion-blob blob-a"></span>
+    <span class="motion-blob blob-b"></span>
+    <span class="motion-blob blob-c"></span>
+    <span class="motion-ring ring-a"></span>
+    <span class="motion-ring ring-b"></span>
+    <span class="motion-dot dot-a"></span>
+    <span class="motion-dot dot-b"></span>
+    <span class="motion-dot dot-c"></span>
+    <span class="motion-dot dot-d"></span>
+  </div>
+  <audio id="landingMusic" src="happy1.mp3" preload="auto"></audio>
+  <main class="landing-shell">
+    <p class="landing-kicker">For Our Colleague</p>
+    <h1 class="landing-title">
+      <span>Happy</span>
+      <span>Birthday</span>
+    </h1>
+    <p class="landing-signature">Eugene Abella</p>
+    <button type="button" class="enter-button" id="enterButton" disabled>Open Birthday Tribute</button>
+  </main>
+  <div class="landing-start-tip" id="landingStartTip" role="status" aria-live="polite">
+    <span class="landing-start-icon" aria-hidden="true"></span>
+    Click anywhere to start music
+  </div>
+  <div class="landing-spectrum-shell" aria-hidden="true">
+    <canvas id="landingSpectrum" class="landing-spectrum" width="820" height="120"></canvas>
+  </div>
+  <script src="landing.js"></script>
+</body>
+</html>

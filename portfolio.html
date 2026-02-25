@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Pacifico&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portfolio-page">
+  <audio id="bgMusic" src="Happy.mp3" loop preload="auto"></audio>
+  <div class="surprise-overlay" id="surpriseOverlay" aria-hidden="true" hidden>
+    <div class="surprise-modal" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle">
+      <div class="surprise-balloons" aria-hidden="true">
+        <span class="balloon balloon-pink"></span>
+        <span class="balloon balloon-yellow"></span>
+        <span class="balloon balloon-cyan"></span>
+        <span class="balloon balloon-mint"></span>
+      </div>
+      <p class="surprise-kicker">From Your Colleagues</p>
+      <h2 class="surprise-title" id="surpriseTitle">Happy Birthday, Eugene Abella</h2>
+      <p class="surprise-copy">This page is a birthday tribute for our colleague Eugene Abella, with memories and greetings from the classmate.</p>
+      <div class="surprise-cake" aria-hidden="true">
+        <span class="cake-top"></span>
+        <span class="cake-body"></span>
+        <span class="cake-candle"></span>
+        <span class="cake-flame"></span>
+      </div>
+      <button type="button" class="surprise-close" id="surpriseClose">Open Eugene's Birthday Page</button>
+      <div class="surprise-confetti" id="surpriseConfetti" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <main class="portfolio-shell">
+    <section class="panel reveal">
+      <div class="poster-section">
+        <img src="image.jpg" alt="Birthday cover image" loading="lazy">
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="hero-section">
+        <div>
+          <p class="hero-kicker">For Our Colleague Eugene</p>
+          <h1 class="hero-title">
+            <span>Happy</span>
+            <span>Birthday</span>
+          </h1>
+          <p class="hero-signature">Eugene</p>
+          <p class="hero-note">A birthday tribute from your colleagues. Scroll through your memory wall.</p>
+        </div>
+        <figure class="hero-photo-frame">
+          <img src="image1.jpg" alt="Eugene birthday portrait" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="content-section">
+        <p class="section-label">Colleague Memories</p>
+        <h2 class="section-title">Birthday Moments</h2>
+        <p class="section-copy">May your birthday have the best moment.</p>
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img src="image2.jpg" alt="Eugene birthday moment one" loading="lazy">
+          </article>
+          <article class="photo-card">
+            <img src="image3.jpg" alt="Eugene birthday moment two" loading="lazy">
+          </article>
+          <article class="photo-card wide">
+            <img src="image4.jpg" alt="Eugene birthday moment three" loading="lazy">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="content-section single-photo-section">
+        <p class="section-label">Colleague Highlight</p>
+        <h2 class="section-title">Special Moment</h2>
+        <figure class="single-photo-card">
+          <img src="image5.jpg" alt="Eugene highlight one" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="content-section single-photo-section">
+        <p class="section-label">Colleague Highlight</p>
+        <h2 class="section-title">Special Moment</h2>
+        <figure class="single-photo-card">
+          <img src="image6.jpg" alt="Eugene highlight two" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="content-section single-photo-section">
+        <p class="section-label">More Memories</p>
+        <h2 class="section-title">Travel Moments</h2>
+        <figure class="single-photo-card">
+          <img src="image7.jpg" alt="Eugene memory image seven" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="content-section pair-photo-section">
+        <p class="section-label">More Memories</p>
+        <h2 class="section-title">Work Moments</h2>
+        <div class="pair-photo-grid">
+          <figure class="pair-photo-card">
+            <img src="image8.jpg" alt="Eugene memory image eight" loading="lazy">
+          </figure>
+          <figure class="pair-photo-card">
+            <img src="image9.jpg" alt="Eugene memory image nine" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="content-section single-photo-section">
+        <p class="section-label">More Memories</p>
+        <h2 class="section-title">Work Moments</h2>
+        <figure class="single-photo-card">
+          <img src="image10.jpg" alt="Eugene memory image ten" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="graduation-section">
+        <h2 class="section-title">Happy Birthday, Eugene Abella</h2>
+        <figure class="graduation-frame">
+          <video id="graduationVideo" controls autoplay muted loop preload="auto" playsinline poster="birthday_art.png">
+            <source id="graduationSource" src="Eugene.mp4" type="video/mp4">
+            Your browser does not support the graduation video.
+          </video>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="portfolio-spectrum-shell" aria-hidden="true">
+    <canvas id="portfolioSpectrum" class="portfolio-spectrum" width="820" height="120"></canvas>
+  </div>
+  <button type="button" class="music-toggle" id="musicToggle" aria-label="Toggle background music">Play Music</button>
+  <div class="music-gate" id="musicGate">
+    <button type="button" id="musicStartButton">Tap to start music</button>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
